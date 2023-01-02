@@ -8,6 +8,6 @@ now compelete merging the photometric part and the volumetric fusion part,now pu
 # Setup
 We have ran our experiments under CUDA Version 10.1.105, CuDNN 7.6.5 and Ubuntu 18.04. We recommend create a virtual environment with Python 3.6 using Anaconda conda create -n edam python=3.6 and install the dependencies as
 ```=
-conda install -c conda-forge opencv=4.2.0`
-pip3 install -r path/to/Endo-Depth-and-Motion/requirements.txt`
+conda install -c conda-forge opencv=4.2.0
+pip3 install -r path/to/Endo-Depth-and-Motion/requirements.txt
 ```
