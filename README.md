@@ -11,3 +11,14 @@ We have ran our experiments under CUDA Version 10.1.105, CuDNN 7.6.5 and Ubuntu 
 conda install -c conda-forge opencv=4.2.0
 pip3 install -r path/to/Endo-Depth-and-Motion-merge/requirements.txt
 ```
+# Endo-Depth
+# Tracking
+'
+dataset_folder   
+      -->rectified01      
+         -->color	 
+	 -->depth	       
+	 -->intrinsics.txt	       
+      ...
+'
+# Volumetric fusion
