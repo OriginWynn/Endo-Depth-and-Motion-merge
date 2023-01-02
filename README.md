@@ -25,7 +25,7 @@ python apps/tracking_ours/__main__.py -d cuda:0 -i path/to/hamlyn_tracking_test_
 ```
 ```
 dataset_folder   
-      -->rectified01      
+      -->test1      
          -->color	 
 	 -->depth	       
 	 -->intrinsics.txt	       
