@@ -12,7 +12,11 @@ conda install -c conda-forge opencv=4.2.0
 pip3 install -r path/to/Endo-Depth-and-Motion-merge/requirements.txt
 ```
 # Endo-Depth
+`python apps/depth_estimate/__main__.py --image_path path/to/image_folder --model_path path/to/model_folder`
 # Tracking
+```
+python apps/tracking_ours/__main__.py -d cuda:0 -i path/to/hamlyn_tracking_test_data -o apps/tracking_ours/results
+```
 ```
 dataset_folder   
       -->rectified01      
