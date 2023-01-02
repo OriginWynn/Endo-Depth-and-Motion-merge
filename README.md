@@ -12,10 +12,12 @@ conda install -c conda-forge opencv=4.2.0
 pip3 install -r path/to/Endo-Depth-and-Motion-merge/requirements.txt
 ```
 # Endo-Depth
+To predict the depth for a single or multiple images use
 ```=
 python apps/depth_estimate/__main__.py --image_path path/to/image_folder --model_path path/to/model_folder
 ```
 # Tracking
+You can execute the photometric tracking with
 ```=
 python apps/tracking_ours/__main__.py -d cuda:0 -i path/to/hamlyn_tracking_test_data -o apps/tracking_ours/results
 ```
@@ -26,6 +28,16 @@ dataset_folder
 	 -->depth	       
 	 -->intrinsics.txt	       
       ...
+```
+To use alternatively the tracking methods of Open3D run
+```=
+python apps/tracking_open3d/__main__.py -d cuda:0 -i path/to/hamlyn_tracking_test_data -o apps/tracking_open3d/results -t park
+```
+Tips for the visualization. When the two windows (images and 3D map) display, left click on the middle of the images window and then you can use the following commands pressing the buttons:
+```=
+a: to start the automode. The currently displayed scene will be tracked and viewed in real time in the 3D window.
+s: to stop the automode. This can only be done when one frame is finally tracked and before the next one is started. So just smash the button multiple times until it stops!
+h: to print help about more commands, like skip the scene or to track frame by frame.
 ```
 # Volumetric fusion
 ```=
