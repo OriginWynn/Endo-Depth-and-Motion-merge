@@ -13,12 +13,12 @@ pip3 install -r path/to/Endo-Depth-and-Motion-merge/requirements.txt
 ```
 # Endo-Depth
 # Tracking
-`
+```
 dataset_folder   
       -->rectified01      
          -->color	 
 	 -->depth	       
 	 -->intrinsics.txt	       
       ...
-`
+```
 # Volumetric fusion
