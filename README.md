@@ -47,5 +47,5 @@ python apps/volumetric_fusion/__main__.py -i apps/tracking_ours/results/test1.pk
 ```
 # The merge of Endo-Depth and Tracking and Volumetric fusion
 ```=
-python apps/tracking_ours/__newmain__.py -d cuda:0 -i path/to/Hamlyn_tracking_test_data -o path/to/Hamlyn_tracking_test_data/test1/ -m path/to/Stereo_loss_models/epoch1/
+python apps/tracking_ours/__newmain__.py -d cuda:0 -i Hamlyn_tracking_test_data -o Hamlyn_tracking_test_data/test1/ -m Stereo_loss_models/epoch1/
 ```
