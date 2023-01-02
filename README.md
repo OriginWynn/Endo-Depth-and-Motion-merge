@@ -13,16 +13,11 @@ pip3 install -r path/to/Endo-Depth-and-Motion-merge/requirements.txt
 ```
 # Endo-Depth
 ```=
-python apps/depth_estimate/__main__.py 
---image_path path/to/image_folder 
---model_path path/to/model_folder
+python apps/depth_estimate/__main__.py --image_path path/to/image_folder --model_path path/to/model_folder
 ```
 # Tracking
 ```=
-python apps/tracking_ours/__main__.py 
--d cuda:0 
--i path/to/hamlyn_tracking_test_data 
--o apps/tracking_ours/results
+python apps/tracking_ours/__main__.py -d cuda:0 -i path/to/hamlyn_tracking_test_data -o apps/tracking_ours/results
 ```
 ```
 dataset_folder   
@@ -34,7 +29,9 @@ dataset_folder
 ```
 # Volumetric fusion
 ```=
-python apps/volumetric_fusion/__main__.py 
--i apps/tracking_ours/results/test1.pkl 
--o path/to/hamlyn_tracking_test_data/test1
+python apps/volumetric_fusion/__main__.py -i apps/tracking_ours/results/test1.pkl -o path/to/hamlyn_tracking_test_data/test1
+```
+# The merge of Endo-Depth and Tracking and Volumetric fusion
+``=
+python apps/tracking_ours/__newmain__.py -d cuda:0 -i Hamlyn_tracking_test_data -o Hamlyn_tracking_test_data/test1/ -m Stereo_loss_models/epoch1/
 ```
