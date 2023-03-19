@@ -60,6 +60,8 @@ def save_frame_camera_key(dir_path, interval , ext='jpg', delay=1):
 dirPathPattern = "snapshot/"
 
 save_frame_camera_key(dirPathPattern, 30)
+#To can't open above one camera:
+#https://stackoverflow.com/questions/53888878/opencv-warn0-terminating-async-callback-when-attempting-to-take-a-picture?rq=1
 # all_camera_idx_available = []
 
 # for camera_idx in range(10):
