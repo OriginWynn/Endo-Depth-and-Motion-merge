@@ -49,3 +49,10 @@ python apps/volumetric_fusion/__main__.py -i apps/tracking_ours/results/test1.pk
 ```=
 python apps/tracking_ours/__newmain__.py -d cuda:0 -i Hamlyn_tracking_test_data -o Hamlyn_tracking_test_data/test1/ -m Stereo_loss_models/epoch1/
 ```
+
+#hinet
+
+```=
+https://github.com/google-research/google-research/tree/master/hitnet?fbclid=IwAR0kR3lEabzoBXK2SKnoK_OOCTrQm1f1zZ3q3Rtg0AyK6cP5YMbXxYRC0u0
+https://github.com/ibaiGorordo/HITNET-Stereo-Depth-estimation?fbclid=IwAR2vm1AA-C9NWqk7DZ0eMh_hsRMjmQPLzuGeuY93k3rrWZHHzADi1yBpWYg
+```
